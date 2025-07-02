@@ -7,7 +7,6 @@ test.beforeEach(async ({ page }) => {
     await page.goto('https://gb-saa-test.vercel.app/');
 });
 
-
 test('Assert navigation bars are present', async ({ page }) => {
     await expect(page.locator(shoppingCartPage.getNav())).toContainText("Home");
     await expect(page.locator(shoppingCartPage.getNav())).toContainText("Products");
